@@ -1,9 +1,31 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TDWorld.Game/GameApp.boo">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../examples/Runner/Main.cs">
     <Files>
       <File FileName="TDWorld.Game/GameApp.boo" Line="5" Column="1" />
+      <File FileName="TDWorld.Game/IGameApp.boo" Line="29" Column="1" />
+      <File FileName="TDWorld.Game/IGameLogic.boo" Line="3" Column="18" />
+      <File FileName="TDWorld.Game/IGameView.boo" Line="3" Column="18" />
+      <File FileName="../examples/Runner/Main.cs" Line="13" Column="17" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Runner" expanded="True">
+            <Node name="Main.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

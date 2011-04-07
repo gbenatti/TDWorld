@@ -2,45 +2,104 @@
 <Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{27A41C51-265E-4AE0-A5A7-D8B983B4ABBF}</ProjectGuid>
+    <ProjectGuid>{52A52291-1B83-468B-A74B-78FBCCC83D20}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{B3672514-7503-4B01-B4B4-B44E87061EA2}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>TDWorld.Game</RootNamespace>
-    <AssemblyName>TDWorld.Game</AssemblyName>
+    <AssemblyName>TDWorldGame</AssemblyName>
+    <MtouchMinimumOS>3.0</MtouchMinimumOS>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
     <ErrorReport>prompt</ErrorReport>
-    <ducky>false</ducky>
+    <genwarnings>false</genwarnings>
+    <MtouchDebug>True</MtouchDebug>
     <culture />
     <nostdlib>false</nostdlib>
+    <ducky>false</ducky>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
     <ConsolePause>false</ConsolePause>
-    <genwarnings>false</genwarnings>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
-    <ducky>false</ducky>
+    <genwarnings>false</genwarnings>
+    <MtouchDebug>False</MtouchDebug>
     <culture />
     <nostdlib>false</nostdlib>
+    <ducky>false</ducky>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
     <ConsolePause>false</ConsolePause>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
     <genwarnings>false</genwarnings>
+    <MtouchDebug>True</MtouchDebug>
+    <culture />
+    <nostdlib>false</nostdlib>
+    <ducky>false</ducky>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <genwarnings>false</genwarnings>
+    <MtouchDebug>False</MtouchDebug>
+    <culture />
+    <nostdlib>false</nostdlib>
+    <ducky>false</ducky>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Boo.Lang, Version=2.0.9.4, Culture=neutral, PublicKeyToken=32c39770e9a21a67" />
-    <Reference Include="Boo.Lang.PatternMatching, Version=2.0.9.4, Culture=neutral, PublicKeyToken=32c39770e9a21a67" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
   </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties InternalTargetFrameworkVersion="IPhone" />
+    </MonoDevelop>
+  </ProjectExtensions>
   <ItemGroup>
     <Compile Include="GameApp.boo" />
     <Compile Include="IGameApp.boo" />
     <Compile Include="IGameLogic.boo" />
     <Compile Include="IGameView.boo" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TDWorld.Os\TDWorld.Os.booproj">
+      <Project>{8E4646F2-4A59-48E9-A33A-84F5C05D0A15}</Project>
+      <Name>TDWorld.Os</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

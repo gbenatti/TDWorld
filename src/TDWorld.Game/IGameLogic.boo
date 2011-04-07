@@ -1,5 +1,7 @@
 namespace TDWorld.Game
 
+import TDWorld.Os
+
 interface IGameLogic:
 	Views as (IGameView):
 		get
