@@ -1,4 +1,4 @@
 namespace TDWorld.Game
 
-class GameApp:
+class GameApp(IGameApp):
 	pass
