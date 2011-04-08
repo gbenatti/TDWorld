@@ -82,8 +82,15 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="Boo.Lang.Compiler, Version=2.0.9.4, Culture=neutral, PublicKeyToken=32c39770e9a21a67">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\boo 0.9.4 micro\Boo.Lang.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang, Version=2.0.9.4, Culture=neutral, PublicKeyToken=32c39770e9a21a67">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\boo 0.9.4 micro\Boo.Lang.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
@@ -91,15 +98,8 @@
     </MonoDevelop>
   </ProjectExtensions>
   <ItemGroup>
-    <Compile Include="GameApp.boo" />
-    <Compile Include="IGameApp.boo" />
     <Compile Include="IGameLogic.boo" />
     <Compile Include="IGameView.boo" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TDWorld.Os\TDWorld.Os.booproj">
-      <Project>{8E4646F2-4A59-48E9-A33A-84F5C05D0A15}</Project>
-      <Name>TDWorld.Os</Name>
-    </ProjectReference>
+    <Compile Include="GameEx.boo" />
   </ItemGroup>
 </Project>

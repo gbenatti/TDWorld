@@ -93,4 +93,10 @@
       <Properties InternalTargetFrameworkVersion="IPhone" />
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\TDWorld.Game\TDWorld.Game.booproj">
+      <Project>{52A52291-1B83-468B-A74B-78FBCCC83D20}</Project>
+      <Name>TDWorld.Game</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

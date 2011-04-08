@@ -5,6 +5,8 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
+using TDWorld.Game;
+
 namespace Runner
 {
 	[Register ("AppDelegate")]

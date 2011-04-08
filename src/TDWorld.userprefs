@@ -1,20 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../examples/Runner/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TDWorld.Game/GameEx.boo">
     <Files>
-      <File FileName="TDWorld.Game/GameApp.boo" Line="5" Column="1" />
-      <File FileName="TDWorld.Game/IGameApp.boo" Line="29" Column="1" />
-      <File FileName="TDWorld.Game/IGameLogic.boo" Line="3" Column="18" />
-      <File FileName="TDWorld.Game/IGameView.boo" Line="3" Column="18" />
-      <File FileName="../examples/Runner/Main.cs" Line="13" Column="17" />
+      <File FileName="TDWorld.Game/IGameLogic.boo" Line="3" Column="1" />
+      <File FileName="TDWorld.Game/IGameView.boo" Line="3" Column="1" />
+      <File FileName="../examples/Runner/Main.cs" Line="31" Column="4" />
+      <File FileName="TDWorld.Game/GameEx.boo" Line="3" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Runner" expanded="True">
-            <Node name="Main.cs" selected="True" />
-          </Node>
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True" selected="True" />
