@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDWorld.Framework", "TDWorl
 EndProject
 Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Logic", "TDWorld.Logic\TDWorld.Logic.booproj", "{158A6006-AE0A-4765-B24A-DF69869C8CA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDWorld.Runner", "..\examples\TDWorld.Runner\TDWorld.Runner.csproj", "{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,18 @@ Global
 		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|iPhone.Build.0 = Release|iPhone
 		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Debug|iPhone.Build.0 = Debug|iPhone
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|iPhone.ActiveCfg = Release|iPhone
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|iPhone.Build.0 = Release|iPhone
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = TDWorld.Framework\TDWorld.Framework.csproj

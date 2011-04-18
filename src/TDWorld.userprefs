@@ -6,7 +6,7 @@
       <File FileName="TDWorld.Framework/IGameLogic.cs" Line="13" Column="19" />
       <File FileName="TDWorld.Framework/IGameApp.cs" Line="10" Column="29" />
       <File FileName="TDWorld.Framework/GameApp.cs" Line="19" Column="3" />
-      <File FileName="TDWorld.Framework/Components/GameLogicComponent.cs" Line="15" Column="1" />
+      <File FileName="TDWorld.Framework/Components/GameLogicComponent.cs" Line="13" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
