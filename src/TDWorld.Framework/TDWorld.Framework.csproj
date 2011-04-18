@@ -5,25 +5,24 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{158A6006-AE0A-4765-B24A-DF69869C8CA7}</ProjectGuid>
-    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{B3672514-7503-4B01-B4B4-B44E87061EA2}</ProjectTypeGuids>
+    <ProjectGuid>{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>TDWorld.Logic</RootNamespace>
-    <AssemblyName>TDWorldLogic</AssemblyName>
+    <RootNamespace>TDWorld.Framework</RootNamespace>
+    <AssemblyName>TDWorldFramework</AssemblyName>
     <MtouchMinimumOS>3.0</MtouchMinimumOS>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <genwarnings>false</genwarnings>
-    <MtouchDebug>True</MtouchDebug>
-    <culture />
-    <nostdlib>false</nostdlib>
-    <ducky>false</ducky>
+    <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
     <MtouchUseLlvm>false</MtouchUseLlvm>
     <ConsolePause>false</ConsolePause>
     <MtouchUseSGen>false</MtouchUseSGen>
@@ -32,31 +31,28 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
-    <genwarnings>false</genwarnings>
-    <MtouchDebug>False</MtouchDebug>
-    <culture />
-    <nostdlib>false</nostdlib>
-    <ducky>false</ducky>
+    <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
-    <MtouchUseLlvm>false</MtouchUseLlvm>
-    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>False</MtouchDebug>
     <MtouchUseSGen>false</MtouchUseSGen>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
     <MtouchUseThumb>false</MtouchUseThumb>
     <MtouchArch>ARMv6</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <genwarnings>false</genwarnings>
-    <MtouchDebug>True</MtouchDebug>
-    <culture />
-    <nostdlib>false</nostdlib>
-    <ducky>false</ducky>
+    <WarningLevel>4</WarningLevel>
     <MtouchUseSGen>false</MtouchUseSGen>
+    <MtouchDebug>True</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <ConsolePause>false</ConsolePause>
     <MtouchUseThumb>false</MtouchUseThumb>
@@ -65,17 +61,15 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
-    <genwarnings>false</genwarnings>
-    <MtouchDebug>False</MtouchDebug>
-    <culture />
-    <nostdlib>false</nostdlib>
-    <ducky>false</ducky>
+    <WarningLevel>4</WarningLevel>
     <MtouchUseSGen>false</MtouchUseSGen>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>False</MtouchDebug>
     <MtouchUseThumb>false</MtouchUseThumb>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchArch>ARMv6</MtouchArch>
     <MtouchUseLlvm>false</MtouchUseLlvm>
   </PropertyGroup>
@@ -84,10 +78,21 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="MonoGame.Framework.iOS, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\MonoGame\MonoGame.Framework.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <MonoDevelop>
       <Properties InternalTargetFrameworkVersion="IPhone" />
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <Compile Include="IGameView.cs" />
+    <Compile Include="IGameLogic.cs" />
+    <Compile Include="IGameApp.cs" />
+    <Compile Include="GameApp.cs" />
+  </ItemGroup>
 </Project>

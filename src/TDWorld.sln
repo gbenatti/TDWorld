@@ -1,50 +1,46 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Game", "TDWorld.Game\TDWorld.Game.booproj", "{27A41C51-265E-4AE0-A5A7-D8B983B4ABBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDWorld.Framework", "TDWorld.Framework\TDWorld.Framework.csproj", "{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}"
 EndProject
-Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Logic", "TDWorld.Logic\TDWorld.Logic.booproj", "{935CD438-795E-401B-8243-9F473D0A689B}"
-EndProject
-Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Os", "TDWorld.Os\TDWorld.Os.booproj", "{D0301299-0109-49F8-B93B-94464A39E0E4}"
-EndProject
-Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Game.Tests", "..\tests\TDWorld.Game.Tests\TDWorld.Game.Tests.booproj", "{F6F88D75-C07B-4AF0-9209-D4E138FF8BF5}"
-EndProject
-Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Logic.Tests", "..\tests\TDWorld.Logic.Tests\TDWorld.Logic.Tests.booproj", "{17EB81E1-801B-4F5C-820F-E0764EC05714}"
-EndProject
-Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Os.Tests", "..\tests\TDWorld.Os.Tests\TDWorld.Os.Tests.booproj", "{B7682DD4-EED4-4A83-B465-BB0582157F60}"
+Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Logic", "TDWorld.Logic\TDWorld.Logic.booproj", "{158A6006-AE0A-4765-B24A-DF69869C8CA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{17EB81E1-801B-4F5C-820F-E0764EC05714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17EB81E1-801B-4F5C-820F-E0764EC05714}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17EB81E1-801B-4F5C-820F-E0764EC05714}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17EB81E1-801B-4F5C-820F-E0764EC05714}.Release|Any CPU.Build.0 = Release|Any CPU
-		{27A41C51-265E-4AE0-A5A7-D8B983B4ABBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27A41C51-265E-4AE0-A5A7-D8B983B4ABBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27A41C51-265E-4AE0-A5A7-D8B983B4ABBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27A41C51-265E-4AE0-A5A7-D8B983B4ABBF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{935CD438-795E-401B-8243-9F473D0A689B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{935CD438-795E-401B-8243-9F473D0A689B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{935CD438-795E-401B-8243-9F473D0A689B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{935CD438-795E-401B-8243-9F473D0A689B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7682DD4-EED4-4A83-B465-BB0582157F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7682DD4-EED4-4A83-B465-BB0582157F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7682DD4-EED4-4A83-B465-BB0582157F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7682DD4-EED4-4A83-B465-BB0582157F60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0301299-0109-49F8-B93B-94464A39E0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0301299-0109-49F8-B93B-94464A39E0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0301299-0109-49F8-B93B-94464A39E0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0301299-0109-49F8-B93B-94464A39E0E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6F88D75-C07B-4AF0-9209-D4E138FF8BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6F88D75-C07B-4AF0-9209-D4E138FF8BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6F88D75-C07B-4AF0-9209-D4E138FF8BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6F88D75-C07B-4AF0-9209-D4E138FF8BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|iPhone.Build.0 = Debug|iPhone
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|iPhone.ActiveCfg = Release|iPhone
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|iPhone.Build.0 = Release|iPhone
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|iPhone.Build.0 = Release|iPhone
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = TDWorld.Game\TDWorld.Game.booproj
+		StartupItem = TDWorld.Framework\TDWorld.Framework.csproj
 	EndGlobalSection
 EndGlobal
