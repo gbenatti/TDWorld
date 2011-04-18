@@ -8,18 +8,12 @@ namespace TDWorld.Framework
 	{
 		public IGameLogic GameLogic { get; protected set; }
 
+		public CreateGameLogicHandler CreateGameLogic {protected get; set; }
+
+		public GameLoadHandler LoadGame {protected get; set; } 
+
 		public GameApp ()
 		{
-		}
-		
-		public bool LoadGame()
-		{
-			return false;
-		}
-		
-		public IGameLogic CreateGameLogic()
-		{
-			return null;
 		}
 	}
 }
