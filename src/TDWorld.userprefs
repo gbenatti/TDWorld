@@ -1,12 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Gomo/Xomo.boo">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TDWorld.Framework/Components/GameLogicComponent.cs">
     <Files>
-      <File FileName="TDWorld.Game/GameApp.boo" Line="5" Column="1" />
-      <File FileName="TDWorld.Game/IGameLogic.boo" Line="12" Column="28" />
-      <File FileName="TDWorld.Game/IGameApp.boo" Line="1" Column="1" />
-      <File FileName="TDWorld.Os/GameTime.boo" Line="3" Column="8" />
-      <File FileName="Gomo/Xomo.boo" Line="3" Column="1" />
+      <File FileName="TDWorld.Framework/IGameView.cs" Line="13" Column="1" />
+      <File FileName="TDWorld.Framework/IGameLogic.cs" Line="13" Column="19" />
+      <File FileName="TDWorld.Framework/IGameApp.cs" Line="10" Column="29" />
+      <File FileName="TDWorld.Framework/GameApp.cs" Line="19" Column="3" />
+      <File FileName="TDWorld.Framework/Components/GameLogicComponent.cs" Line="15" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
