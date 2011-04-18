@@ -10,8 +10,6 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>TDWorld.Runner</RootNamespace>
     <SupportedDevices>IPhoneAndIPad</SupportedDevices>
-    <MainNibFileIPad>MainWindowIPad.xib</MainNibFileIPad>
-    <MainNibFile>MainWindowIPhone.xib</MainNibFile>
     <AssemblyName>TDWorldRunner</AssemblyName>
     <MtouchMinimumOS>3.0</MtouchMinimumOS>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -31,6 +29,7 @@
     <MtouchUseSGen>false</MtouchUseSGen>
     <MtouchUseThumb>false</MtouchUseThumb>
     <MtouchArch>ARMv6</MtouchArch>
+    <MtouchI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -86,19 +85,7 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowIPhone.xib.designer.cs">
-      <DependentUpon>MainWindowIPhone.xib</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindowIPad.xib.designer.cs">
-      <DependentUpon>MainWindowIPad.xib</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs" />
-    <Compile Include="AppDelegateIPhone.cs" />
-    <Compile Include="AppDelegateIPad.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="MainWindowIPhone.xib" />
-    <Page Include="MainWindowIPad.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -106,4 +93,10 @@
       <Properties InternalTargetFrameworkVersion="IPhone" />
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\TDWorld.Framework\TDWorld.Framework.csproj">
+      <Project>{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}</Project>
+      <Name>TDWorld.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
