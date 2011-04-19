@@ -12,18 +12,18 @@ namespace TDWorld.Runner
     [Register("AppDelegate")]
     class Application : UIApplicationDelegate
     {
+		private GameApp game;
+		
         public override void FinishedLaunching(UIApplication app)
         {
             // Fun begins..
-            using (var game = new GameApp())
-            {
-                game.Run();
-            }
+            game = new GameApp();
+			game.Run();
         }
 
-		static void Main (string[] args)
+		static void Main (string [] args)
 		{
-			UIApplication.Main (args);
+			UIApplication.Main (args,null,"AppDelegate");
 		}
 	}
 }
