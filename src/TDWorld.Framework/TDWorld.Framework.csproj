@@ -95,6 +95,9 @@
     <Compile Include="IGameApp.cs" />
     <Compile Include="GameApp.cs" />
     <Compile Include="Components\GameLogicComponent.cs" />
+    <Compile Include="AbstractGameLogic.cs" />
+    <Compile Include="HumanView.cs" />
+    <Compile Include="IGameState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
