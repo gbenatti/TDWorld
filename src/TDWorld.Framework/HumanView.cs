@@ -14,7 +14,7 @@ namespace TDWorld.Framework
 		}
 		
 		
-		public void Update (Microsoft.Xna.Framework.GameTime gametime)
+		public void Update (IGameTime gametime)
 		{
 			throw new System.NotImplementedException();
 		}

@@ -27,30 +27,34 @@ namespace TDWorld.Framework
 		
 		T _current;
 		
-		List<T> _states;
+		Dictionary<string, T> _states;
 		
 		public StateManager (T state)
 		{
-			_states = new List<T>();
-			Current = state;
+			_states = new Dictionary<string, T>();
+			if (state != null)
+			{
+				_states.Add(state.Name.ToLower(), state);
+				Current = state;
+			}
 		}
 		
 		public void AddState(T state)
 		{
-			if (_states.Contains(state)) 
-				throw(new InvalidOperationException(string.Format("The state {0} was already added", state)));
+			if (_states.ContainsKey(state.Name.ToLower())) 
+				throw(new InvalidOperationException(string.Format("The state {0} was already added", state.Name)));
 			
-			_states.Add(state);
+			_states.Add(state.Name.ToLower(), state);
 		}
 		
-		public void RemoveState(T state)
+		public void RemoveState(string stateName)
 		{
-			_states.Remove(state);
+			_states.Remove(stateName.ToLower());
 		}
 		
-		public void ChangeState(T state) 
+		public void ChangeState(string stateName) 
 		{
-			Current = state;
+			Current = _states[stateName.ToLower()];
 		}
 	}
 }

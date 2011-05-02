@@ -11,7 +11,7 @@
     <RootNamespace>TDWorld.Framework</RootNamespace>
     <AssemblyName>TDWorldFramework</AssemblyName>
     <MtouchMinimumOS>3.0</MtouchMinimumOS>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -96,13 +96,10 @@
     <Compile Include="IGameViewState.cs" />
     <Compile Include="StateManager.cs" />
     <Compile Include="IGameState.cs" />
+    <Compile Include="IGameTime.cs" />
+    <Compile Include="GameTimeWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
   </ItemGroup>
-  <ProjectExtensions>
-    <MonoDevelop>
-      <Properties InternalTargetFrameworkVersion="IPhone" />
-    </MonoDevelop>
-  </ProjectExtensions>
 </Project>

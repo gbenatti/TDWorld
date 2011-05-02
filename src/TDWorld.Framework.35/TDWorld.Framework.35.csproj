@@ -34,6 +34,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="..\TDWorld.Framework\AbstractGameLogic.cs">
+      <Link>AbstractGameLogic.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\HumanView.cs">
+      <Link>HumanView.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\IGameApp.cs">
+      <Link>IGameApp.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\IGameLogic.cs">
+      <Link>IGameLogic.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\IGameLogicState.cs">
+      <Link>IGameLogicState.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\IGameState.cs">
+      <Link>IGameState.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\IGameView.cs">
+      <Link>IGameView.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\IGameViewState.cs">
+      <Link>IGameViewState.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\StateManager.cs">
+      <Link>StateManager.cs</Link>
+    </Compile>
+    <Compile Include="..\TDWorld.Framework\IGameTime.cs">
+      <Link>IGameTime.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

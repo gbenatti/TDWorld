@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-using Microsoft.Xna.Framework;
-
 namespace TDWorld.Framework
 {
 	public interface IGameLogic
@@ -14,7 +12,7 @@ namespace TDWorld.Framework
 		
 		void AddGameView(IGameView view);
 		
-		void Update(GameTime gameTime);
+		void Update(IGameTime gameTime);
 	}
 }
 

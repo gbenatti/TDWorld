@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-using Microsoft.Xna.Framework;
-
 namespace TDWorld.Framework
 {
 	public class AbstractGameLogic : IGameLogic
@@ -33,12 +31,12 @@ namespace TDWorld.Framework
 			Views.Add(view);
 		}
 		
-		public void Update(GameTime gameTime)
+		public void Update(IGameTime gameTime)
 		{
 			UpdateViews(gameTime);
 		}
 		
-		private void UpdateViews(GameTime gameTime)
+		private void UpdateViews(IGameTime gameTime)
 		{
 			foreach(var view in Views)
 			{

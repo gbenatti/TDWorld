@@ -22,10 +22,10 @@ namespace TDWorld.Framework.Components
 		{
 			if (GameLogic != null)
 			{
-				GameLogic.Update(gameTime);
+				GameLogic.Update(new GameTimeWrapper(gameTime));
 				foreach (var view in GameLogic.Views)
 				{
-					view.Update(gameTime);
+					view.Update(new GameTimeWrapper(gameTime));
 				}
 			}
 		}

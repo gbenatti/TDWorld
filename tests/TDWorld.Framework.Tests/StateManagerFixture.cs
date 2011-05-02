@@ -6,6 +6,8 @@ namespace TDWorld.Framework.Tests
 {
 	class StartState : IGameLogicState
 	{
+		public string Name { get { return "Start"; } }
+
 		public void Enter ()
 		{
 		}
@@ -14,14 +16,17 @@ namespace TDWorld.Framework.Tests
 		{
 		}
 	
-		public void Update (Microsoft.Xna.Framework.GameTime gameTime)
+		public void Update (IGameTime gameTime)
 		{
 			throw new System.NotImplementedException ();
 		}
+
 	}
 	
 	class MenuState : IGameLogicState
 	{
+		public string Name { get { return "Menu"; } }
+
 		public void Enter ()
 		{
 			throw new System.NotImplementedException ();
@@ -32,7 +37,7 @@ namespace TDWorld.Framework.Tests
 			throw new System.NotImplementedException ();
 		}
 	
-		public void Update (Microsoft.Xna.Framework.GameTime gameTime)
+		public void Update (IGameTime gameTime)
 		{
 			throw new System.NotImplementedException ();
 		}
@@ -65,51 +70,87 @@ namespace TDWorld.Framework.Tests
 		[Test()]
 		public void ShouldSupportStatesBeingRemoved ()
 		{
-			var state1 = new StartState();
-			var state2 = new MenuState();
+			var start = new StartState();
+			var menu = new MenuState();
 			
 			var manager = new StateManager<IGameLogicState>(null);
 
-			manager.AddState(state1);
-			manager.AddState(state2);
+			manager.AddState(start);
+			manager.AddState(menu);
 			
 			Assert.AreEqual(2, manager.StateCount);
 			
-			manager.RemoveState(state1);
+			manager.RemoveState("Menu");
 			
 			Assert.AreEqual(1, manager.StateCount);
+		}
+		
+		[Test()]
+		public void StateRemovalShouldBeCaseInsensitive ()
+		{
+			var start = new StartState();
+			
+			var manager = new StateManager<IGameLogicState>(null);
+
+			manager.AddState(start);
+			
+			Assert.AreEqual(1, manager.StateCount);
+			manager.RemoveState("start");
+			Assert.AreEqual(0, manager.StateCount);
 		}
 		
 		[Test]
 		public void ShouldSetCurrentToStartStateWhenCreated ()
 		{
-			var state = new StartState();
-			var manager = new StateManager<IGameLogicState>(state);
+			var start = new StartState();
+			var manager = new StateManager<IGameLogicState>(start);
 
-			Assert.AreSame(state, manager.Current);
+			Assert.AreSame(start, manager.Current);
 		}
 
 		[Test()]
 		[ExpectedException(typeof(InvalidOperationException))]
 		public void ShouldFailWhenTryingToAddTheSameStateTwice ()
 		{
-			var state = new StartState();
+			var start = new StartState();
 			
 			var manager = new StateManager<IGameLogicState>(null);
 
-			manager.AddState(state);
-			manager.AddState(state);
+			manager.AddState(start);
+			manager.AddState(start);
 		}
 		
 		[Test()]
 		public void ChangingStateShouldCallEnterInNewState()
 		{
 			var manager = new StateManager<IGameLogicState>(null);
-			var state = new Mock<IGameLogicState>();
+			var first = new Mock<IGameLogicState>();
+
+			first.Setup(foo => foo.Name).Returns("first");
 			
-			manager.ChangeState(state as IGameLogicState);
+			manager.AddState(first.Object);
+			manager.ChangeState("first");
 			
-			state.Verify(foo => foo.Enter());
+			first.Verify(foo => foo.Enter());
+		}
+		
+		[Test()]
+		public void ChangingStateShouldCallExitInOldState()
+		{
+			var manager = new StateManager<IGameLogicState>(null);
+			var first = new Mock<IGameLogicState>();
+			var second = new Mock<IGameLogicState>();
+			
+			first.Setup(foo => foo.Name).Returns("first");
+			second.Setup(foo => foo.Name).Returns("second");
+
+			manager.AddState(first.Object);
+			manager.AddState(second.Object);
+			
+			manager.ChangeState("first");
+			manager.ChangeState("second");
+			
+			first.Verify(foo => foo.Exit());
 		}
 	}
 }
