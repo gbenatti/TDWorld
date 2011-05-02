@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDWorld.Framework", "TDWorld.Framework\TDWorld.Framework.csproj", "{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}"
 EndProject
-Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "TDWorld.Logic", "TDWorld.Logic\TDWorld.Logic.booproj", "{158A6006-AE0A-4765-B24A-DF69869C8CA7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDWorld.Runner", "..\examples\TDWorld.Runner\TDWorld.Runner.csproj", "{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDWorld.Logic", "TDWorld.Logic\TDWorld.Logic.csproj", "{DF13B62F-E944-44FA-A781-DF0B5A6156AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDWorld.Framework.Tests", "..\tests\TDWorld.Framework.Tests\TDWorld.Framework.Tests.csproj", "{3E35C081-30D0-4081-AEA6-D5D7DAD91616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDWorld.Framework.35", "TDWorld.Framework.35\TDWorld.Framework.35.csproj", "{B2611C32-6382-4523-BF70-84963C152319}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,18 +21,18 @@ Global
 		Release|iPhone = Release|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|iPhone.Build.0 = Debug|iPhone
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|iPhone.ActiveCfg = Release|iPhone
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|iPhone.Build.0 = Release|iPhone
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{158A6006-AE0A-4765-B24A-DF69869C8CA7}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Release|iPhone.Build.0 = Release|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{3E35C081-30D0-4081-AEA6-D5D7DAD91616}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{78BD5CD8-72EE-4020-95F8-CA73081E9B2A}.Debug|iPhone.ActiveCfg = Debug|iPhone
@@ -53,6 +57,30 @@ Global
 		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|iPhone.Build.0 = Release|iPhone
 		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{9D104AAB-92E7-4D17-BD60-CFB64D07D4B9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B2611C32-6382-4523-BF70-84963C152319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Release|iPhone.Build.0 = Release|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{B2611C32-6382-4523-BF70-84963C152319}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Debug|iPhone.Build.0 = Debug|iPhone
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Release|iPhone.ActiveCfg = Release|iPhone
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Release|iPhone.Build.0 = Release|iPhone
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{DF13B62F-E944-44FA-A781-DF0B5A6156AA}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = TDWorld.Framework\TDWorld.Framework.csproj

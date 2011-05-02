@@ -1,12 +1,13 @@
 using System;
+
 using Microsoft.Xna.Framework;
 
 namespace TDWorld.Framework
 {
-	public interface IGameState
+	public interface IGameLogicState : IGameState
 	{
-		void Enter();
-		void Exit();
+		void Update(GameTime gameTime);		
+
 	}
 }
 

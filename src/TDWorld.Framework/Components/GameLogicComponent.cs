@@ -15,6 +15,7 @@ namespace TDWorld.Framework.Components
 		override public void Initialize()
 		{
 			base.Initialize();
+			GameLogic.Start();
 		}
 		
 		override public void Update(GameTime gameTime) 

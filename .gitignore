@@ -1,2 +1,5 @@
 bin/
+test-results/
 *.pidb
+.DS_Store
+

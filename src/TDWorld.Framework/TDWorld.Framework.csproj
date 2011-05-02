@@ -84,11 +84,6 @@
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ProjectExtensions>
-    <MonoDevelop>
-      <Properties InternalTargetFrameworkVersion="IPhone" />
-    </MonoDevelop>
-  </ProjectExtensions>
   <ItemGroup>
     <Compile Include="IGameView.cs" />
     <Compile Include="IGameLogic.cs" />
@@ -97,9 +92,17 @@
     <Compile Include="Components\GameLogicComponent.cs" />
     <Compile Include="AbstractGameLogic.cs" />
     <Compile Include="HumanView.cs" />
+    <Compile Include="IGameLogicState.cs" />
+    <Compile Include="IGameViewState.cs" />
+    <Compile Include="StateManager.cs" />
     <Compile Include="IGameState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
   </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties InternalTargetFrameworkVersion="IPhone" />
+    </MonoDevelop>
+  </ProjectExtensions>
 </Project>
