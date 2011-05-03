@@ -2,15 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="../tests/TDWorld.Framework.Tests/StateManagerFixture.cs">
     <Files>
-      <File FileName="../tests/TDWorld.Framework.Tests/StateManagerFixture.cs" Line="45" Column="3" />
       <File FileName="TDWorld.Framework/StateManager.cs" Line="31" Column="3" />
-      <File FileName="TDWorld.Framework/IGameState.cs" Line="7" Column="22" />
+      <File FileName="TDWorld.Framework/IGameState.cs" Line="1" Column="1" />
+      <File FileName="../tests/TDWorld.Framework.Tests/StateManagerFixture.cs" Line="160" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="TDWorld.Framework.Tests" selected="True" />
-        </State>
+        <State expanded="True" />
       </Pad>
       <Pad Id="ClassPad">
         <State selected="True" />
@@ -19,16 +17,8 @@
         <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True">
-          <Node name="TDWorld.Framework.Tests" expanded="True">
-            <Node name="TDWorld" expanded="True">
-              <Node name="Framework" expanded="True">
-                <Node name="Tests" expanded="True" selected="True">
-                  <Node name="StateManagerFixture" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+        <State expanded="True" selected="True">
+          <Node name="TDWorld.Framework.Tests" expanded="True" />
         </State>
       </Pad>
     </Pads>

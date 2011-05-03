@@ -1,6 +1,6 @@
 using System;
 using NUnit.Framework;
-using Moq;
+using NMock2;
 
 namespace TDWorld.Framework.Tests
 {
@@ -124,33 +124,46 @@ namespace TDWorld.Framework.Tests
 		public void ChangingStateShouldCallEnterInNewState()
 		{
 			var manager = new StateManager<IGameLogicState>(null);
-			var first = new Mock<IGameLogicState>();
-
-			first.Setup(foo => foo.Name).Returns("first");
 			
-			manager.AddState(first.Object);
+			var mocks = new Mockery();
+			var first = mocks.NewMock<IGameLogicState>();
+			
+			Stub.On(first).
+				GetProperty("Name").
+            	Will(Return.Value("first"));
+						
+			Expect.Once.On(first).
+				Method("Enter");
+
+			manager.AddState(first);
 			manager.ChangeState("first");
 			
-			first.Verify(foo => foo.Enter());
+			mocks.VerifyAllExpectationsHaveBeenMet();
 		}
 		
 		[Test()]
 		public void ChangingStateShouldCallExitInOldState()
 		{
 			var manager = new StateManager<IGameLogicState>(null);
-			var first = new Mock<IGameLogicState>();
-			var second = new Mock<IGameLogicState>();
-			
-			first.Setup(foo => foo.Name).Returns("first");
-			second.Setup(foo => foo.Name).Returns("second");
+			var mocks = new Mockery();
 
-			manager.AddState(first.Object);
-			manager.AddState(second.Object);
+			var first = mocks.NewMock<IGameLogicState>();
+			var second = mocks.NewMock<IGameLogicState>();
+
+			Stub.On(first).GetProperty("Name").Will(Return.Value("first"));
+			Stub.On(second).GetProperty("Name").Will(Return.Value("second"));
 			
+			manager.AddState(first);
+			manager.AddState(second);
+			
+			Expect.Once.On(first).Method("Enter");
+			Expect.Once.On(first).Method("Exit");
+			Expect.Once.On(second).Method("Enter");
+
 			manager.ChangeState("first");
 			manager.ChangeState("second");
 			
-			first.Verify(foo => foo.Exit());
+			mocks.VerifyAllExpectationsHaveBeenMet();
 		}
 	}
 }
