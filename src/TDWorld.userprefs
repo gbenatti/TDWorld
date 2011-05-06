@@ -4,11 +4,15 @@
     <Files>
       <File FileName="TDWorld.Framework/StateManager.cs" Line="31" Column="3" />
       <File FileName="TDWorld.Framework/IGameState.cs" Line="1" Column="1" />
-      <File FileName="../tests/TDWorld.Framework.Tests/StateManagerFixture.cs" Line="160" Column="21" />
+      <File FileName="../tests/TDWorld.Framework.Tests/StateManagerFixture.cs" Line="142" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" />
+        <State expanded="True">
+          <Node name="TDWorld.Framework.Tests" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+          </Node>
+        </State>
       </Pad>
       <Pad Id="ClassPad">
         <State selected="True" />
@@ -17,9 +21,7 @@
         <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True">
-          <Node name="TDWorld.Framework.Tests" expanded="True" />
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
